@@ -948,4 +948,14 @@ Wire Wire Line
 	5850 6050 5850 6100
 Wire Wire Line
 	5850 6400 5850 6500
+Wire Notes Line
+	6150 5700 6150 7250
+Wire Notes Line
+	6150 7250 1350 7250
+Wire Notes Line
+	1350 7250 1350 5700
+Wire Notes Line
+	1350 5700 6150 5700
+Text Notes 1500 5850 0    60   ~ 0
+POWER
 $EndSCHEMATC
