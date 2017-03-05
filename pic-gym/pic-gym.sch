@@ -1,4 +1,5 @@
 EESchema Schematic File Version 2
+LIBS:pic-gym-rescue
 LIBS:power
 LIBS:device
 LIBS:transistors
@@ -695,8 +696,6 @@ F 3 "" H 7100 1000 50  0001 C CNN
 $EndComp
 Wire Wire Line
 	6850 1000 7100 1000
-Wire Wire Line
-	2150 6350 2550 6350
 $Comp
 L GND #PWR010
 U 1 1 5886A3F0
@@ -738,10 +737,6 @@ F 3 "" H 2250 6900 50  0001 C CNN
 	1    2250 6900
 	1    0    0    -1  
 $EndComp
-Wire Wire Line
-	2150 6150 2250 6150
-Wire Wire Line
-	2250 6150 2250 6900
 Wire Wire Line
 	3550 6800 3550 6900
 Wire Wire Line
@@ -1019,7 +1014,7 @@ F 3 "" H 6650 1650 50  0001 C CNN
 	0    1    1    0   
 $EndComp
 $Comp
-L LM7805 U1
+L LM7805-RESCUE-pic-gym U1
 U 1 1 5887B1EF
 P 4600 6400
 F 0 "U1" H 4750 6204 50  0000 C CNN
@@ -1029,4 +1024,14 @@ F 3 "" H 4600 6400 50  0001 C CNN
 	1    4600 6400
 	1    0    0    -1  
 $EndComp
+Wire Wire Line
+	2150 6150 2500 6150
+Wire Wire Line
+	2500 6150 2500 6350
+Wire Wire Line
+	2500 6350 2550 6350
+Wire Wire Line
+	2250 6900 2250 6350
+Wire Wire Line
+	2250 6350 2150 6350
 $EndSCHEMATC
